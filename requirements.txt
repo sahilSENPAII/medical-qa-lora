@@ -1,0 +1,15 @@
+# Core ML stack — pinned to versions known to work on Apple Silicon (MPS).
+# IMPORTANT: use a Python 3.10–3.12 environment. PyTorch does not yet ship
+# wheels for Python 3.14, and several deps below have no 3.14 build.
+torch>=2.2.0
+transformers>=4.45.0
+peft>=0.13.0
+datasets>=3.0.0
+accelerate>=0.34.0
+evaluate>=0.4.2
+rouge-score>=0.1.2
+bert-score>=0.3.13
+matplotlib>=3.8.0
+numpy>=1.26.0
+sentencepiece>=0.2.0
+protobuf>=4.25.0
