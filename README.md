@@ -1,4 +1,4 @@
-# Medical Question Answering — LoRA Fine-tuning of Llama-3.2-1B-Instruct
+# Medical Question Answering: LoRA Fine-tuning of Llama-3.2-1B-Instruct
 
 Fine-tune **unsloth/Llama-3.2-1B-Instruct** (an ungated mirror of Meta's
 Llama-3.2-1B-Instruct) on the **MedQuAD** medical QA dataset using
