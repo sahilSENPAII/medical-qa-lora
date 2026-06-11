@@ -26,8 +26,7 @@ described below also works but is significantly slower).
 
 ## Setup
 
-> **Python version:** use **Python 3.10–3.12**. PyTorch does not yet publish
-> wheels for 3.14, and several dependencies have no 3.14 build.
+
 
 ```bash
 python3.11 -m venv .venv
@@ -35,8 +34,6 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-> No HuggingFace login or license approval required — `unsloth/Llama-3.2-1B-Instruct`
-> is an ungated public mirror.
 
 ---
 
@@ -98,7 +95,7 @@ ROUGE-L and BERTScore-F1 on 50 held-out MedQuAD test examples (higher is better)
 | BERTScore-F1  | 0.8392        | 0.8414            | +0.26%      |
 
 The LoRA fine-tuning shifted the model toward the terser, clinical phrasing of
-MedQuAD reference answers — improving lexical overlap (ROUGE-L) meaningfully and
+MedQuAD reference answers, improving lexical overlap (ROUGE-L) meaningfully and
 semantic similarity (BERTScore) modestly. The Instruct baseline is already a
 fairly strong starting point, so gains are smaller than they would be off a
 non-instruct base.
